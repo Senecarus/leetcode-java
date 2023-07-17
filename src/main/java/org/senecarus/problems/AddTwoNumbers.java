@@ -1,4 +1,4 @@
-package org.senecarus.tasks;
+package org.senecarus.problems;
 
 import org.senecarus.types.ListNode;
 
@@ -6,29 +6,27 @@ public class AddTwoNumbers {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-        int carry = 0;
+        byte carry = 0;
 
         ListNode head = null;
         ListNode previous = null;
         while (l1 != null || l2 != null || carry > 0) {
 
-            int v1 = l1 != null ? l1.val : 0;
-            int v2 = l2 != null ? l2.val : 0;
+            // using bytes because The number of nodes in each linked list is in the range [1, 100]
+            byte v1 = (byte) (l1 != null ? l1.val : 0);
+            byte v2 = (byte) (l2 != null ? l2.val : 0);
 
-            int s = v1 + v2 + carry;
-            carry = s / 10;
-            s = s % 10;
+            byte s = (byte) (v1 + v2 + carry);
+            carry = (byte) (s / 10);
+            s = (byte) (s % 10);
 
-            if (head == null) {
-                head = new ListNode(s);
-                previous = head;
+             if (head == null) {
+                 previous = head = new ListNode(s);
 
-            } else {
+             } else {
 
-                ListNode current  = new ListNode(s);
-                previous.next = current;
-                previous = current;
-            }
+                 previous = previous.next = new ListNode(s);
+             }
 
             l1 = l1 != null ? l1.next : null;
             l2 = l2 != null ? l2.next : null;

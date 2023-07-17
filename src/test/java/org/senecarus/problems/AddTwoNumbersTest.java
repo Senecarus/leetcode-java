@@ -1,6 +1,4 @@
-package org.senecarus.tasks;
-
-import static org.junit.Assert.*;
+package org.senecarus.problems;
 
 import org.junit.Test;
 import org.senecarus.types.ListNode;
