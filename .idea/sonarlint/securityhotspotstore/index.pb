@@ -15,3 +15,7 @@ m
 =src/main/java/org/senecarus/problems/LongestCommonPrefix.java,9/2/923bfd85046f05ee44a50c852da0a8d629cec081
 k
 ;src/test/java/org/senecarus/problems/AddTwoNumbersTest.java,4/4/442626beff33daef66d273750aaf08e5639e7c35
+h
+8src/main/java/org/senecarus/problems/ClimbingStairs.java,f/e/fe462b5dd4f26ce5095c407dada1d65337a5ff54
+l
+<src/test/java/org/senecarus/problems/ClimbingStairsTest.java,7/a/7a53cf2aaab7562f09835496a972a86e531a3c57
